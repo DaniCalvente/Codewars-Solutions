@@ -20,3 +20,18 @@ eqSumPowdig(200, 3) ----> [153]
 eqSumPowdig(370, 3) ----> [153, 370]
 Enjoy it !!
 */
+
+function eqSumPowdig(hMax, exp) {
+  let result = [];
+
+  for (let i = 2; i <= hMax; i++) {
+    let sum = [...String(i)].reduce(
+      (previousValue, currentValue) => previousValue + (+currentValue) ** exp,
+      0
+    );
+    if (sum == i) {
+      result.push(i);
+    }
+  }
+  return result;
+}
