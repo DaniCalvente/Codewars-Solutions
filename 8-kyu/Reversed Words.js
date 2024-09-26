@@ -10,9 +10,15 @@ Example(Input --> Output):
 "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
 
 */
-
+//! Option 1:
 function reverseWords(str) {
   let splittedString = str.split(" ");
   splittedString.reverse();
-  return splittedString.join(" "); // reverse those words
+  return splittedString.join(" ");
+}
+
+//! Option 2:
+
+function reverseWords(str) {
+  return str.split(" ").reverse().join(" ");
 }
