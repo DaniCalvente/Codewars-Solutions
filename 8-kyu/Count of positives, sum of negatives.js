@@ -15,6 +15,10 @@ For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should r
 
 function countPositivesSumNegatives(input) {
   // your code here
+  if (input === null || input.length === 0) {
+    return [];
+  }
+
   let positivesCounted = 0;
   let sumOfNegatives = 0;
 
