@@ -5,3 +5,12 @@ A hero is on his way to the castle to complete his mission. However, he's been t
 
 Return true if yes, false otherwise :)
 */
+
+function hero(bullets, dragons) {
+  //Get Coding!
+  if (bullets / 2 >= dragons) {
+    return true;
+  } else {
+    return false;
+  }
+}
