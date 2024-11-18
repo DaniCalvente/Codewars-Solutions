@@ -15,7 +15,6 @@ y is not considered a vowel for this kata
 
 function shortcut(string) {
   const noVowels = [];
-  const noVowelsString = noVowels.toString();
 
   for (let i = 0; i < string.length; i++) {
     if (
